@@ -1,70 +1,124 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About_ME</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .foto-kegiatan {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
 </head>
+<body class="container mt-5">
+    <h1 class="text-center">Pengenalan Diri</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <p>Nama: <strong>Jalaluddin Basir</strong></p>
+            <p>NIM: <strong>230209502014</strong></p>
+            <p>Kelas: <strong>PTIK F</strong></p>
+            <p>Alamat: <del>BUMI</del> <strong>JL.Tidung X STP 8 Blok 10 No.139 MAKASSAR, SULAWESI SELATAN</strong></p>
+            <p>Asal Sekolah: <strong>PONPES TAHFIDZUL QURAN IMAM ASY-SYATHIBY GOWA</strong></p>
+            <pre>Alam takkan kemana, kita bisa saja kembali ke tempat yang sama
+tetapi tidak dengan suasana, pengalaman dan pelajaran yang sama.</pre>
+        </div>
+    </div>
 
-<body>
-    <h1>Perkenalan</h1>
-    <p>Nama : Jalaluddin Basir</p>
-    <p>NIM : 230209502014</p>
-    <p>Kelas : PTIK F</p>
-    <p>Alamat : Jl. Tidung 10 Blok.10 No.139 <del></del></p>
-    <p>Alamat :  <a href="" target="_blank">Makassar</a></p>
-    <p>Sekolah Asal: Pondok Pesantren Tahfidzul Quran IMAM ASY-SYTHIBY GOWA <strong></strong></p>
-    <p><a href="https://unm.ac.id" target="_blank">Universitas Negeri Makassar</a></p>
-  
-    <p><em>tetap jaya dalam tantangan</em></p>
-  
-    <h2>Daftar Mata Kuliah yang Nilainya Error</h2>
-    <ol>
-      <li>Sistem Operasi</li>
-      <li>Elektronika Dan Digital</li>
-      <li>Matematika Dasar</li>
+    <h1 class="mt-5">Pengalaman Perkuliahan</h1>
+    <p>Selama mengikuti perkuliahan di PTIK, saya telah mendapatkan berbagai pengalaman yang sangat berharga. Proses belajar yang intensif serta dukungan dari dosen-dosen yang kompeten membuat saya semakin memahami materi yang diajarkan.</p>
+    <p>Saya juga aktif dalam berbagai kegiatan di kampus yang membantu meningkatkan keterampilan saya di luar kurikulum akademik. Pengalaman ini memberikan saya perspektif baru dan memperluas jaringan sosial saya.</p>
+
+    <h2>Daftar Mata Kuliah yang Telah Dipelajari</h2>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Matematika Diskrit</li>
+        <li class="list-group-item">Algoritma dan Struktur Data</li>
+        <li class="list-group-item">Jaringan Komputer</li>
+        <li class="list-group-item">Basis Data</li>
+        <li class="list-group-item">Pengembangan Web</li>
     </ol>
-  
-    <h2>Daftar Dosen Favorit</h2>
-    <ul type="square">
-      <li>Prof. Dr. Syahrul, M. Pd</li>
-      <li>Dr. Firdaus, S.Pd., M.T</li>
-      <li>Prof. Dr. Ir. Riana Tangkin Mangesa, M.T</li>
+
+    <h2 class="mt-4">Daftar Dosen</h2>
+    <ul class="list-group">
+        <li class="list-group-item">Dr. Firdaus, S.Pd., M.T</li>
+        <li class="list-group-item">Alifya Nurilmi H. S,Pd, M.Pd</li>
+        <li class="list-group-item">Abd. Rahman Patta, S.Kom, M.T.</li>
     </ul>
-  
-    <p></p><h2>Foto Profil</h2>
-    <p></p><img src="monas.jpeg" alt="Foto Profil" style="width:70%;max-width:700px; height:auto"><p></p>
-      
-  
-    <br><br><h2>Teman Dekat</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>No</th>
-          <th>Nama</th>
-          <th>Jenis Kelamin</th>
-          <th>Alamat</th>
-          <th>Asal Sekolah</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Muh. Alwan</td>
-          <td>Laki-Laki</td>
-          <td>Jl. perintis kemerdekaan</td>
-          <td>Sekolah Tinggi Ilmu Bahasa Arab</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Muh. Amirul Ihsan</td>
-          <td>Laki-Laki</td>
-          <td>Jl. antang raya</td>
-          <td>Politeknik Negeri Ujung Pandang</td>
-        </tr>
-      </tbody>
+
+    <h2 class="mt-4">Foto Kegiatan</h2>
+    
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="WhatsApp Image 2024-10-10 at 18.56.18.jpeg" class="d-block w-100" alt="Kegiatan 1">
+            </div>
+            <div class="carousel-item">
+                <img src="WhatsApp Image 2024-10-10 at 18.56.18 (1).jpeg" class="d-block w-100" alt="Kegiatan 2">
+            </div>
+            <div class="carousel-item">
+                <img src="WhatsApp Image 2024-10-10 at 18.56.18 (2).jpeg" class="d-block w-100" alt="Kegiatan 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <h2 class="mt-4">Tabel Teman Dekat</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Jenis Kelamin</th>
+                <th>Alamat</th>
+                <th>Asal Sekolah</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Muh. Alwan Amiruddin</td>
+                <td>Laki-laki</td>
+                <td>MAKASSAR</td>
+                <td>PONPES TAHFIDZUL QURAN IMAM ASY-SYATHIBY GOWA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>A. Nawfal Muntazar Amir</td>
+                <td>Laki-laki</td>
+                <td>Sudiang</td>
+                <td>PONPES TAHFIDZUL QURAN IMAM ASY-SYATHIBY GOWA</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Muh. Amirul Ihsan</td>
+                <td>laki-laki</td>
+                <td>MAKASSAR</td>
+                <td>PONPES TAHFIDZUL QURAN IMAM ASY-SYATHIBY GOWA</td>
+            </tr>
+        </tbody>
     </table>
-  </body>
-  </html>
-  
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
